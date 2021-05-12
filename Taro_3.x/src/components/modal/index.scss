@@ -1,0 +1,80 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+.modal {
+  &-show {
+    .mask {
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+  }
+  .mask {
+    visibility: hidden;
+    position: fixed;
+    z-index: 50;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    transition-duration: 200ms;
+  }
+  .content_hide {
+    visibility: hidden !important; // transform: translate(-50%, 0) scale(0) !important;
+    opacity: 0 !important;
+  }
+  .content {
+    visibility: visible;
+    width: 688rpx;
+    position: fixed;
+    z-index: 52;
+    top: 50%;
+    left: 50%;
+    opacity: 1; // transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 200ms;
+    .close {
+      position: absolute;
+      bottom: 0;
+      transform: translate3d(0, 150%, 0);
+      margin-top: 30rpx;
+      display: flex;
+      align-items: center;
+      .at-icon {
+        font-size: 48rpx;
+        color: #fff;
+      }
+    }
+  }
+  &-content {
+    min-width: 540rpx;
+    max-width: 690rpx;
+    background-color: #ffffff;
+    border-radius: 20rpx;
+    overflow: hidden;
+    &-top {
+      width: 100%;
+      padding: 48rpx 0;
+    }
+    &-foot {
+      width: 100%;
+      height: 90rpx;
+      justify-content: space-around;
+      border-top: solid #d5d5d5;
+      View,
+      view {
+        flex: auto;
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        border-left:2rpx solid #d5d5d5;
+        &:first-child {
+          border-left:none !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.dataNone {
+  width: 100%;
+  &-icon {
+    // padding-top: 100rpx;
+    box-sizing: content-box; // width: 281rpx;
+    height: 315rpx;
+    margin: 0 auto;
+    background: url('../../assets/image/data_none.png') no-repeat;
+    background-size: 281rpx;
+    background-position: center 100rpx;
+  }
+  &-text {
+    text-align: center;
+    padding-top: 16rpx;
+    padding-bottom: 60rpx;
+    font-size: 28rpx;
+    color: #999999;
+  }
+}

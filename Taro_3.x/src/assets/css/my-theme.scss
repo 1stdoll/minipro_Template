@@ -1,0 +1,19 @@
+page {
+  font-family: "Microsoft YaHei", 'PingFang SC';
+}
+
+View,
+view {
+  box-sizing: border-box;
+}
+
+.flex_C {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+Image,
+image {
+  display: block;
+}
