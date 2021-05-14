@@ -1,0 +1,21 @@
+.my-virtual {
+  width: 100%;
+  display: block;
+  &-box {
+    width: 100%;
+    display: block;
+    box-sizing: content-box;
+    position: relative;
+  }
+  &-list {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    &-item {
+      position: absolute;
+      width: 100%;
+      padding: 30rpx 40rpx;
+      padding-bottom: 0;
+    }
+  }
+}

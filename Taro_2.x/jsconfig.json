@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+      "experimentalDecorators": true,
+  },
+  "paths": {
+    "@/components/*": ["./src/components/*"],
+    "@/service/*": ["./src/service/*"],
+    "@/assets/*": ["./src/assets/*"],
+    "@/utils/*": ["./src/utils/*"],
+    "@/package": ["./package.json"],
+    "@/project": ["./project.config.json"],
+  }
+}

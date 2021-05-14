@@ -1,0 +1,28 @@
+.swipeAction {
+  width: 100%;
+  height: auto;
+  transition-duration: 200ms;
+  border-bottom: 2rpx solid #f1f1f1;
+  position: relative;
+  &-view {
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 10;
+    transition-duration: 200ms;
+  }
+  &-bar {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    color: #ffffff;
+    font-size: 28rpx;
+    flex: auto;
+    &-btn {
+      width: 100rpx;
+      height: 100%;
+    }
+  }
+}

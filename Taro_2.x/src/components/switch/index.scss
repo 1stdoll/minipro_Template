@@ -1,0 +1,11 @@
+.switch {
+  padding: 2rpx;
+  margin: 2rpx 8rpx;
+  transition-duration: 200ms;
+  &-ball {
+    transition-duration: 200ms;
+    position: relative;
+    border-radius: 50%;
+    border: 2rpx solid;
+  }
+}

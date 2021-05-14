@@ -1,0 +1,26 @@
+{
+  "name": "remax-one",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Starter template for Remax apps",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Caihuanyu <eterlf41@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "remax build -w -t ",
+    "dev:ali":"npm run dev -- ali",
+    "dev:wx":"npm run dev -- wechat",
+    "build": "cross-env NODE_ENV=production remax build -t ",
+    "build:ali":"npm run build -- ali",
+    "build:wx":"npm run build -- wechat"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.13.1",
+    "remax": "^2.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3"
+  }
+}

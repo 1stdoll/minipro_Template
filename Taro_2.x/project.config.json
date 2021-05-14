@@ -1,0 +1,101 @@
+{
+  "miniprogramRoot": "dist/",
+  "projectname": "JoyLink",
+  "description": "悦邻汇",
+  "appid": "wx35738cd35fdd5a15",
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "enhance": true,
+    "postcss": false,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": 0,
+          "name": "pages/webView/index",
+          "pathName": "pages/webView/index",
+          "query": "url=https%3A%2F%2Fh5.joylinkcenter.com%2Fspa%2Flogin%2Fbyminipro%3Fto%3D%2Fgame%2Findex2.html",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "kc-order",
+          "pathName": "pages/kitchen-order/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 2,
+          "name": "pages/welfare-detail/index",
+          "pathName": "pages/welfare-detail/index",
+          "query": "id=74",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "login",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 4,
+          "name": "pages/emall-result/index",
+          "pathName": "pages/emall-result/index",
+          "query": "orderNo=1280374681769218048&qcode=1",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

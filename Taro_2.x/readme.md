@@ -1,8 +1,8 @@
-##Taro_3.x
+##Taro_2.x
 
-#小程序开发框架Taro_3.x模板
+#小程序开发框架Taro_2.x模板
 
-- 选用TARO 3.x框架(^3.0.24)
+- 选用TARO 2.x框架(^2.2.16)
 - 封装适用改版框架的小程序更新检查方法（update.js 默认方法 app.js已引入 UDM）
 - 封装适用该框架的网络请求方法（request.js 默认方法）
 - 封装项目内部页面跳转事件（pathRouter.js pageTo方法）【该方法需要页面创建格式为 $pagename$/index,也可设置参数type=2使用完整路径跳转】
@@ -12,13 +12,10 @@
 - 封装富文本内容处理方法，配合mini-html-parser2的parse方法使用可以适用RichText组件（utils.js replaceHtml方法）
 - 封装了超链接参数提取方法（utils.js pathParams方法）
 - 安装了dva依赖，models文件请直接添加在models文件夹中，会自动生效
-- 已添加了popup，model，divider组件，使用前请先查看文件
-- 已添加了扫码处理方法(scan.js),请将关联二维码的扫码逻辑写在这个文件中，并在小程序后台配置关联二维码的规则的时候选择小程序首页
-- 已添加了全局登录、验证登录的方法(login.js),新规则请直接在这之中修改
+- 已添加了avatar,dateNone,linkageList,popup,model,divider,picker,radio,swipeAction,switch,virtual-list组件，使用前请先查看文件
+- 添加了自开发的虚拟列表virtual-list,与Taro官方提供的虚拟列表组件不同的是,列表一项在列表中的位置为单独定位通过TOP实现,需要在itemSize字段中传入每项的高度(统一高度时直接传入单项的高度[rpx],高度不同时传入所有用到的高度数组[rpx],并在格式化时在每项数据中加入size字段[对应高度数组的下标])
 
-- 添加了自开发的虚拟列表,与Taro官方提供的虚拟列表组件不同的是,列表一项在列表中的位置为单独定位通过TOP实现,需要在itemSize字段中传入每项的高度(统一高度时直接传入单项的高度[rpx],高度不同时传入所有用到的高度数组[rpx],并在格式化时在每项数据中加入size字段[对应高度数组的下标])
-
-- 安装依赖时可直接在项目下安装@tarojs/cli框架文件应用最新版本开发框架（cnpm i @tarojs/cli）
+- 安装依赖时可直接在项目下安装@tarojs/cli@2.2.16框架文件应用对应版本开发框架
 - 安装其他依赖时请用-save命令添加到package.json文件中
 
 ##【PS】
@@ -28,14 +25,5 @@
 
 
 #更新日志（只记录完整功能的更新记录）
-##2021年4月1日 11:34:42
-更新了virtual-list,switch,swipeAction,radio,picker,avatar组件
-更新了login.js全局登录验证方法
-更新了scan.js扫码逻辑方法
-
-##2021年1月25日 11:07:15
+##2021年5月14日 09:37:11
 更新框架内容
-
-##2021年5月14日 09:48:28
-更新了dateNone,linkageList组件
-更新了二维码和条形码的绘制方法codeDraw/codeDraw.js
